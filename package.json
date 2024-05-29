@@ -7,7 +7,12 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
-    "storybook-generate": "sb-rn-get-stories"
+    "update-stories": "sb-rn-get-stories --config-path .ondevice",
+    "storybook-watcher": "sb-rn-watcher --config-path .ondevice",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook",
+    "storybook-android": "yarn update-stories && STORYBOOK_ON=true yarn android",
+    "storybook-ios": "yarn update-stories && STORYBOOK_ON=true yarn ios"
   },
   "dependencies": {
     "expo": "~51.0.8",
