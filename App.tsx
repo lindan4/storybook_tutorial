@@ -13,7 +13,7 @@ const Main: React.FC = () => {
 export default function App() {
 
   const STORYBOOK_ON: string | undefined = Constants.expoConfig?.extra?.STORYBOOK_ON;
-  return STORYBOOK_ON === 'true' ? StorybookUI : <Main />;
+  return STORYBOOK_ON === 'true' ? <StorybookUI /> : <Main />;
 }
 
 const styles = StyleSheet.create({

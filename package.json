@@ -7,19 +7,19 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
-    "update-stories": "sb-rn-get-stories --config-path .ondevice",
-    "storybook-watcher": "sb-rn-watcher --config-path .ondevice",
+    "update-stories": "sb-rn-get-stories --config-path .storybook",
+    "storybook-watcher": "sb-rn-watcher --config-path .storybook",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "storybook-android": "yarn update-stories && STORYBOOK_ON=true yarn android",
     "storybook-ios": "yarn update-stories && STORYBOOK_ON=true yarn ios"
   },
   "dependencies": {
-    "expo": "~51.0.8",
-    "expo-constants": "~16.0.1",
+    "expo": "~51.0.11",
+    "expo-constants": "~16.0.2",
     "expo-status-bar": "~1.12.1",
     "react": "18.2.0",
-    "react-native": "0.74.1",
+    "react-native": "0.74.2",
     "styled-components": "^6.1.11"
   },
   "devDependencies": {
