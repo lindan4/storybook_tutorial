@@ -6,7 +6,7 @@ export type MyButtonProps = {
   text: string;
 };
 
-export const MyButton = ({ onPress, text }: MyButtonProps) => {
+const Button = ({ onPress, text }: MyButtonProps) => {
   return (
     <TouchableOpacity style={styles.container} onPress={onPress} activeOpacity={0.8}>
       <Text style={styles.text}>{text}</Text>
@@ -23,3 +23,5 @@ const styles = StyleSheet.create({
   },
   text: { color: 'white' },
 });
+
+export default Button
